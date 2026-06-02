@@ -1,0 +1,49 @@
+---
+import ImgBg from "../../assets/letters-red.webp";
+import { getCollection } from "astro:content";
+
+// Importar el contenido del markdown
+import { Content as LoreContent } from "../../content/lore.md";
+
+// Obtener los datos del markdown (si fuera necesario para metadatos, no para el contenido HTML)
+const allPosts = await getCollection("lore");
+---
+
+<div
+    class="relative py-16 px-4 md:px-8 lg:px-16 overflow-hidden bg-[var(--bg-Dark)]"
+>
+    <picture
+        class="absolute inset-0 z-0 after:content-[''] after:absolute after:inset-0 after:bg-black after:opacity-70 backdrop-blur-md"
+    >
+        <img
+            src={ImgBg.src}
+            alt="imagen de fondo"
+            class="w-full h-full object-cover object-bottom -translate-y-2 drop-shadow-xl [mask-image:linear-gradient(transparent,black_2%)]"
+        />
+    </picture>
+    <div
+        class="z-20 relative text-[var(--White)] max-w-5xl mx-auto space-y-8 lg:space-y-10 text-lg md:text-xl leading-relaxed"
+    >
+        <LoreContent />
+    </div>
+</div>
+
+<style is:global>
+    .astro-code.shiki {
+        background-color: transparent !important;
+    }
+    .relative div p {
+        opacity: 0.9;
+    }
+    .relative div p:nth-child(odd) {
+        text-align: left;
+    }
+    .relative div p:nth-child(even) {
+        text-align: right;
+    }
+
+    .absolute.inset-0.z-0.after\:content-\[\'\'\]::after {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+</style>
