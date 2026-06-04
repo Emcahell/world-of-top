@@ -4,6 +4,7 @@ import { Menu, X } from "@boxicons/react";
 export default function HeaderReact({
   imgBg,
   imgLogoClancy,
+  imgLogoClancyYellow,
   imgLogoTwentyOnePilots,
   imgLogoBlurryface,
   imgLogoTrench,
@@ -22,10 +23,10 @@ export default function HeaderReact({
         <div className="absolute inset-0 bg-black/15 z-0 pointer-events-none"></div>
 
         {/* Left Logo (Clancy / Yellow circular logo) */}
-        <div className="relative z-10 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+        <div className="relative z-10 w-12 h-12 md:w-10 md:h-10 flex items-center justify-center">
           <a href="/" className="hover:scale-105 transition-all duration-300">
             <img
-              src={imgLogoClancy}
+              src={imgLogoClancyYellow}
               alt="Clancy Logo"
               className="w-full h-full object-contain filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
             />
@@ -48,7 +49,7 @@ export default function HeaderReact({
             className="p-1.5 text-[var(--Yellow)] hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer"
             aria-label="Abrir menú"
           >
-            <Menu />
+            <Menu className="w-9 h-9" />
           </button>
         </div>
       </header>
