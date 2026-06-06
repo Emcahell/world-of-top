@@ -23,7 +23,7 @@ export default function HeaderReact({
         <div className="absolute inset-0 bg-black/15 z-0 pointer-events-none"></div>
 
         {/* Left Logo (Clancy / Yellow circular logo) */}
-        <div className="relative z-10 w-12 h-12 md:w-10 md:h-10 flex items-center justify-center">
+        <div className="relative z-10 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">
           <a href="/" className="hover:scale-105 transition-all duration-300">
             <img
               src={imgLogoClancyYellow}
