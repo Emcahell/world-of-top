@@ -1,0 +1,7 @@
+En mayo de 2015, Twenty One Pilots lanzó **Blurryface**, un álbum en el que Tyler Joseph busca representar y personificar todos sus miedos e inseguridades a través de un personaje epónimo: **Blurryface**. En las canciones, este se manifiesta con una voz grave y ojos enrojecidos, encarnando los demonios internos del artista.
+
+Una particularidad de Blurryface es que el álbum está dividido en **nueve círculos**, cada uno correspondiente a una canción y representando un miedo o inseguridad distinta. Durante esta era, Tyler se pinta el cuello y las manos de negro como símbolo visual de sus inseguridades más íntimas.
+
+En el video de **"Heavydirtysoul"** se observa a Tyler dentro de un auto conducido por Blurryface. A medida que avanza la canción, el vehículo se deteriora hasta prenderse en llamas. Sin embargo, al finalizar el tema, la escena regresa al inicio — Tyler sentado en el coche intacto — reforzando la teoría de que todo constituye un ciclo y demostrando que Blurryface no es una entidad física, sino una manifestación del plano mental de Tyler.
+
+En 2018, mediante acertijos y páginas web ocultas, los fans descubrieron un **mapa de Dema**, cartas de **Clancy**, fotografías y videos. En estas cartas, Clancy relata que se encuentra en Dema, una ciudad controlada por **nueve obispos** conocidos como *"Nico and the Niners"*, quienes predican una religión llamada **Vialismo**. También describe cómo ha comprendido que permanecer en ese lugar solo lo conducirá a un estado cada vez peor, por lo que decide escapar.

@@ -1,10 +1,156 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import DiscografiaContent from "../components/discografia/DiscografiaContent.jsx";
+
+// Import data
+import { eras } from "../data/eras";
+import { albums } from "../data/albums";
+
+// Import Era markdown content as HTML strings
+import { compiledContent as vesselContent } from "../content/discografia/era-vessel-y-top.md";
+import { compiledContent as blurryfaceContent } from "../content/discografia/era-blurryface.md";
+import { compiledContent as trenchContent } from "../content/discografia/era-trench.md";
+import { compiledContent as saiContent } from "../content/discografia/era-scaled-and-icy.md";
+import { compiledContent as clancyContent } from "../content/discografia/era-clancy.md";
+
+// Import Album Covers
+import twentyOnePilotsCover from "../assets/logos-y-portadas/twenty-one-pilots-homonimo-cover.webp";
+import regionalAtBestCover from "../assets/logos-y-portadas/Regional-At-Best-cover.webp";
+import vesselCover from "../assets/logos-y-portadas/Twenty_One_Pilots-Vessel-cover.webp";
+import blurryfaceCover from "../assets/logos-y-portadas/Blurryface-cover.webp";
+import trenchCover from "../assets/logos-y-portadas/Trench-cover.webp";
+import scaledAndIcyCover from "../assets/logos-y-portadas/Scaled-and-icy-cover.webp";
+import clancyCover from "../assets/logos-y-portadas/Clancy-cover.webp";
+
+// Import Era Logos
+import logoRab from "../assets/logos-y-portadas/twenty-one-pilots-logo-rab.png";
+import logoBlurryface from "../assets/logos-y-portadas/Twenty-One-Pilots-Logo-2015-blurryface.png";
+import logoTrench from "../assets/logos-y-portadas/Twenty-One-Pilots-Logo-2019-trench.png";
+import logoScaledAndIcy from "../assets/logos-y-portadas/Twenty-One-Pilots-Logo-scaled-and-icy.png";
+import logoClancy from "../assets/logos-y-portadas/Twenty-One-Pilots-Logo-clancy.png";
+
+// Image and content maps
+const coverMap: Record<string, any> = {
+  vessel: vesselCover,
+  blurryface: blurryfaceCover,
+  trench: trenchCover,
+  scaledAndIcy: scaledAndIcyCover,
+  clancy: clancyCover,
+  twentyOnePilots: twentyOnePilotsCover,
+  regionalAtBest: regionalAtBestCover,
+};
+
+const logoMap: Record<string, any> = {
+  rab: logoRab,
+  blurryface: logoBlurryface,
+  trench: logoTrench,
+  scaledAndIcy: logoScaledAndIcy,
+  clancy: logoClancy,
+};
+
+const contentHtmlMap: Record<string, string> = {
+  vessel: await vesselContent(),
+  blurryface: await blurryfaceContent(),
+  trench: await trenchContent(),
+  sai: await saiContent(),
+  clancy: await clancyContent(),
+};
+
+// Build props for the React component (plain data, no Astro components)
+const erasForReact = eras.map((era) => ({
+  id: era.id,
+  title: era.title,
+  accent: era.accent,
+  coverSrc: coverMap[era.coverKey].src,
+  logoSrc: logoMap[era.logoKey].src,
+  contentHtml: contentHtmlMap[era.contentKey],
+}));
+
+const albumsForReact = albums.map((album) => ({
+  id: album.id,
+  name: album.name,
+  date: album.date,
+  accent: album.accent,
+  coverSrc: coverMap[album.coverKey].src,
+  tracklist: album.tracklist,
+}));
 ---
 
 <Layout>
-    <Header />
+  <Header />
 
-    <main></main>
+  <main class="bg-[#231f20] min-h-screen font-roboto">
+    <!-- Hero Title Section -->
+    <section class="py-12 md:py-20 px-4 md:px-8 flex flex-col items-center text-center">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold uppercase mb-6 text-white tracking-wider">
+        Cada álbum representa una era que cuenta una historia.
+      </h1>
+    </section>
+
+    <!-- Interactive Content (React) -->
+    <DiscografiaContent
+      client:idle
+      eras={erasForReact}
+      albums={albumsForReact}
+    />
+  </main>
 </Layout>
+
+<style>
+  /* Era Content Styling (applied to dangerouslySetInnerHTML output) */
+  :global(.era-content p) {
+    margin-bottom: 1.25rem;
+    text-indent: 2rem;
+  }
+  :global(.era-content p:first-child) {
+    text-indent: 0;
+  }
+  :global(.era-content strong) {
+    color: #ffd800;
+    font-weight: 700;
+  }
+  :global(.era-content em) {
+    color: #d62420;
+    font-style: italic;
+  }
+
+  /* Custom Scrollbar */
+  :global(.custom-scrollbar::-webkit-scrollbar) {
+    width: 6px;
+  }
+  :global(.custom-scrollbar::-webkit-scrollbar-track) {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+  }
+  :global(.custom-scrollbar::-webkit-scrollbar-thumb) {
+    background: rgba(255, 216, 0, 0.3);
+    border-radius: 3px;
+  }
+  :global(.custom-scrollbar::-webkit-scrollbar-thumb:hover) {
+    background: rgba(255, 216, 0, 0.5);
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  :global(.animate-fadeIn) {
+    animation: fadeIn 0.2s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  :global(.animate-slideUp) {
+    animation: slideUp 0.3s ease-out;
+  }
+</style>
