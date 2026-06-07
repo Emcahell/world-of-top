@@ -1,0 +1,1 @@
+Nico es uno de los nueve obispos de Dema y representa directamente a Blurryface, la personificación de las inseguridades y la autocrítica de Tyler. Como líder de los obispos, su objetivo principal es mantener el control sobre Clancy y evitar su escape de Dema.

@@ -1,0 +1,1 @@
+Los Obispos son los gobernantes de Dema y predicadores del Vialismo. Cada uno representa una forma de control o negatividad emocional, y trabajan colectivamente para mantener a los habitantes atrapados en la ciudad mediante tácticas de manipulación psicológica.

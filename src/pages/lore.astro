@@ -1,10 +1,360 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+
+// Import markdown content
+import { compiledContent as introContent } from "../content/lore/introduccion.md";
+import { compiledContent as blurryfaceContent } from "../content/lore/blurryface.md";
+import { compiledContent as nicoContent } from "../content/lore/nico.md";
+import { compiledContent as obisposContent } from "../content/lore/obispos.md";
+import { compiledContent as tylerContent } from "../content/lore/tyler.md";
+import { compiledContent as joshContent } from "../content/lore/josh.md";
+import { compiledContent as portadorContent } from "../content/lore/portador-antorcha.md";
+import { compiledContent as banditosContent } from "../content/lore/banditos.md";
+import { compiledContent as clancyVialismoContent } from "../content/lore/clancy-vialismo.md";
+import { compiledContent as demaContent } from "../content/lore/dema.md";
+import { compiledContent as trenchContent } from "../content/lore/trench.md";
+import { compiledContent as nedContent } from "../content/lore/ned.md";
+import { compiledContent as psicokinesisTrashContent } from "../content/lore/psicokinesis-trash.md";
+import { compiledContent as razonVialismoContent } from "../content/lore/razon-vialismo.md";
+import { compiledContent as obisposListContent } from "../content/lore/los-nueve-obispos.md";
+
+// Import images
+import heroImg from "../assets/tyler-&-josh.webp";
+import symbolismImg from "../assets/tyler-josh-clancy.webp";
+import nicoImg from "../assets/eras/nico-and-the-niners.webp";
+import tylerImg from "../assets/page-lore/tyler.webp";
+import joshImg from "../assets/page-lore/josh.webp";
+import portadorImg from "../assets/page-lore/el-portador-de-la-antorcha.webp";
+import banditosImg from "../assets/page-lore/banditos.webp";
+import demaImg from "../assets/page-lore/dema-torres-del-silencio.webp";
+import trenchImg from "../assets/eras/mapa-trench.webp";
+import nedImg from "../assets/page-lore/ned.webp";
+import trashImg from "../assets/page-lore/trash-the-dragon.webp";
+import backgroundImg from "../assets/top-clancy.webp";
+
+// Resolve markdown content to HTML strings
+const introHtml = await introContent();
+const blurryfaceHtml = await blurryfaceContent();
+const nicoHtml = await nicoContent();
+const obisposHtml = await obisposContent();
+const tylerHtml = await tylerContent();
+const joshHtml = await joshContent();
+const portadorHtml = await portadorContent();
+const banditosHtml = await banditosContent();
+const clancyVialismoHtml = await clancyVialismoContent();
+const demaHtml = await demaContent();
+const trenchHtml = await trenchContent();
+const nedHtml = await nedContent();
+const psicokinesisTrashHtml = await psicokinesisTrashContent();
+const razonVialismoHtml = await razonVialismoContent();
+const obisposListHtml = await obisposListContent();
 ---
 
 <Layout>
-    <Header />
+  <Header />
 
-    <main></main>
+  <main class="bg-[#231f20] min-h-screen font-roboto relative overflow-hidden">
+    <!-- Background image with overlay -->
+    <div class="fixed inset-0 z-0">
+      <img src={backgroundImg.src} alt="" class="w-full h-full object-cover opacity-[0.15]" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[#231f20]/90 via-[#231f20]/70 to-[#231f20]/95"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+
+      <!-- Hero Title -->
+      <section class="text-center mb-16">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-white tracking-wider mb-8">
+          Un universo creado meticulosamente, todo se relaciona con todo.
+        </h1>
+        <div class="relative inline-block">
+          <img
+            src={heroImg.src}
+            alt="Tyler y Josh"
+            class="w-full max-w-2xl rounded-2xl shadow-2xl border border-white/10"
+          />
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/40 to-transparent"></div>
+        </div>
+      </section>
+
+      <!-- Intro Content -->
+      <section class="mb-16">
+        <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-2xl p-6 md:p-10 border border-white/5 shadow-xl" set:html={introHtml} />
+      </section>
+
+      <!-- Symbolism Title -->
+      <section class="text-center mb-16">
+        <h2 class="text-2xl md:text-3xl font-bold uppercase text-white tracking-wider mb-8 relative inline-block">
+          Explicación y simbología de elementos clave en el lore.
+          <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#d62420] to-[#ffd800]"></span>
+        </h2>
+        <div class="relative inline-block mt-4">
+          <img
+            src={symbolismImg.src}
+            alt="Tyler y Josh con Clancy"
+            class="w-full max-w-2xl rounded-2xl shadow-2xl border border-white/10"
+          />
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/40 to-transparent"></div>
+        </div>
+      </section>
+
+      <!-- Blurryface -->
+      <section class="mb-12">
+        <div class="lore-entry">
+          <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Blurryface</h3>
+          <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={blurryfaceHtml} />
+        </div>
+      </section>
+
+      <!-- Nico with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Nico</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={nicoHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img
+              src={nicoImg.src}
+              alt="Nico and the Niners"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Obispos -->
+      <section class="mb-12">
+        <div class="lore-entry">
+          <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Obispos</h3>
+          <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={obisposHtml} />
+        </div>
+      </section>
+
+      <!-- Tyler with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img
+              src={tylerImg.src}
+              alt="Tyler Joseph"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">Tyler</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={tylerHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Josh with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Josh</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={joshHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img
+              src={joshImg.src}
+              alt="Josh Dun"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Portador de la Antorcha with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img
+              src={portadorImg.src}
+              alt="El Portador de la Antorcha"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">El Portador de la Antorcha</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={portadorHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Banditos with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Banditos</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={banditosHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img
+              src={banditosImg.src}
+              alt="Los Banditos"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Clancy y Vialismo -->
+      <section class="mb-12">
+        <div class="lore-entry">
+          <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">Clancy y Vialismo</h3>
+          <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={clancyVialismoHtml} />
+        </div>
+      </section>
+
+      <!-- Dema with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img
+              src={demaImg.src}
+              alt="Dema - Torres del Silencio"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Dema</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={demaHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Trench with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Trench</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={trenchHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img
+              src={trenchImg.src}
+              alt="Mapa de Trench"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Ned with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">Ned</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={nedHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img
+              src={nedImg.src}
+              alt="Ned"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Psicokinesis y Trash with image -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img
+              src={trashImg.src}
+              alt="Trash the Dragon"
+              loading="lazy"
+              class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Psicokinesis y Trash</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={psicokinesisTrashHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Razón del Vialismo -->
+      <section class="mb-12">
+        <div class="lore-entry">
+          <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">¿Por qué predican el Vialismo?</h3>
+          <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={razonVialismoHtml} />
+        </div>
+      </section>
+
+      <!-- Los 9 Obispos -->
+      <section class="mb-20">
+        <div class="lore-entry">
+          <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Los 9 Obispos y sus Miedos</h3>
+          <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={obisposListHtml} />
+        </div>
+      </section>
+
+    </div>
+  </main>
 </Layout>
+
+<style>
+  /* Lore content styling */
+  :global(.lore-content p) {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #e5e5e5;
+    text-indent: 2rem;
+  }
+  :global(.lore-content p:first-child) {
+    text-indent: 0;
+  }
+  :global(.lore-content p:last-child) {
+    margin-bottom: 0;
+  }
+  :global(.lore-content strong) {
+    color: #ffd800;
+    font-weight: 700;
+  }
+  :global(.lore-content em) {
+    color: #d62420;
+    font-style: italic;
+  }
+
+  /* Entry title underline */
+  .lore-entry h3 {
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .lore-entry h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #d62420, #ffd800);
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  section {
+    animation: fadeInUp 0.6s ease-out both;
+  }
+</style>

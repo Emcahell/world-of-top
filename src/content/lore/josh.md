@@ -1,0 +1,1 @@
+Josh es el líder de los Banditos, el grupo de resistencia que habita en Trench. Su papel simboliza el apoyo, la hermandad y la fuerza colectiva en la lucha contra los miedos e inseguridades que representan los obispos.

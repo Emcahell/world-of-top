@@ -1,0 +1,1 @@
+Los obispos predican el Vialismo por una razón oscura: buscan que la gente se suicide para poder poseer sus cadáveres y alcanzar la inmortalidad. Según explicó Clancy, es posible vivir dos vidas: la vida original y la vida que se vive cuando una persona es poseída después de la muerte, ya que el cuerpo queda como una vasija disponible para ser habitada.

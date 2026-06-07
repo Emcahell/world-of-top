@@ -1,0 +1,1 @@
+Los Banditos son un grupo de resistencia que habita en Trench y representa a quienes han escapado o buscan escapar de Dema. Su propósito es liberar a otros de la opresión de los obispos y ayudarles a encontrar esperanza y libertad. Utilizan símbolos de color amarillo, ya que los obispos son incapaces de percibir este color.

@@ -1,0 +1,1 @@
+Blurryface es el concepto central del universo y la versión metafórica de Nico y los demás obispos. Apareció en 2015 como representación de los miedos e inseguridades de Tyler. En las canciones se presenta con una voz grave, y el color que lo distingue es el rojo.

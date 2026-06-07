@@ -1,0 +1,1 @@
+Dema es la ciudad donde residen los obispos y la población controlada por su sistema. Tiene la forma de una Torre de Silencio, inspirada en estructuras funerarias reales de la tradición zoroástrica. En el universo de Twenty One Pilots, esta se separa en lápidas, edificios donde están encerradas las personas, y las nueve torres correspondientes a cada obispo.

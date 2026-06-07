@@ -1,0 +1,1 @@
+El Portador de la Antorcha es una figura de liderazgo y resistencia contra la opresión de los obispos. Este rol es interpretado por Josh, líder de los Banditos. La antorcha simboliza la luz de la esperanza y la resistencia contra la oscuridad, siendo un emblema de los esfuerzos por guiar a los prisioneros de Dema hacia la libertad.
