@@ -1,46 +1,50 @@
-# Astro Starter Kit: Basics
+# 🌎 World of TOP — Sitio web Fan de Twenty One Pilots
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Un sitio web dedicado a la banda **Twenty One Pilots**, construido con Astro, React y Tailwind CSS. Contiene información sobre la historia, discografía, lore y curiosidades de la banda, presentada en español.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🛠️ Tecnologías
 
-## 🚀 Project Structure
+- [Astro](https://astro.build/) — Framework estático para sitios web modernos
+- [React](https://react.dev/) — Biblioteca de interfaces de usuario
+- [Tailwind CSS](https://tailwindcss.com/) — Framework de utilidades CSS
+- [TypeScript](https://www.typescriptlang.org/) — JavaScript con tipos
+- [Sharp](https://sharp.pixelplumbing.com/) — Optimización de imágenes
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📄 Páginas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+| Página | Descripción |
+| :--- | :--- |
+| **Inicio** | Página principal con hero, texto introductorio y footer |
+| **Origen** | Historia de la banda desde 2001 hasta la actualidad |
+| **Discografía** | Álbumes y tracks por era (Vessel, Blurryface, Trench, Scaled and Icy, Clancy) |
+| **Lore** | Universo narrativo de Twenty One Pilots (Trench, DEMA, Banditos, etc.) |
+| **Curiosidades** | Datos curiosos y hechos interesantes sobre la banda |
+| **Referencias** | Fuentes y referencias externas |
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 📦 Dependencias principales
 
-## 🧞 Commands
+| Paquete | Versión |
+| :--- | :--- |
+| `astro` | ^6.3.4 |
+| `react` / `react-dom` | ^19.2.6 |
+| `tailwindcss` | ^4.3.0 |
+| `@astrojs/react` | ^5.0.6 |
+| `sharp` | ^0.34.0 |
 
-All commands are run from the root of the project, from a terminal:
+## 🚀 Comandos
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Todos los comandos se ejecutan desde la raíz del proyecto:
 
-## 👀 Want to learn more?
+| Comando | Acción |
+| :--- | :--- |
+| `pnpm install` | Instala las dependencias |
+| `pnpm dev` | Inicia el servidor de desarrollo en `localhost:4321` |
+| `pnpm build` | Genera el sitio de producción en `./dist/` |
+| `pnpm preview` | Vista previa del sitio construido localmente |
+| `pnpm astro ...` | Ejecuta comandos CLI de Astro |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+> **Requisito:** Node.js >= 22.12.0
+
+## 📝 Licencia
+
+Este proyecto es un sitio web fan no oficial. Todo el contenido relacionado con Twenty One Pilots pertenece a sus respectivos creadores.
