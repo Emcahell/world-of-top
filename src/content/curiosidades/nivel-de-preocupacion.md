@@ -1,0 +1,7 @@
+En 2020, durante el inicio de la pandemia de COVID-19, Twenty One Pilots lanzó *"Level of Concern"*, una canción que se convirtió en su **primera canción en alcanzar el puesto #1 en el Billboard Hot Rock Songs**. Pero la historia detrás de esta canción es aún más impresionante que su éxito comercial.
+
+**Tyler escribió y grabó la canción en apenas unas horas**, inspirado directamente por la incertidumbre y el miedo que vivía el mundo en ese momento. La letra refleja la ansiedad colectiva y la necesidad de encontrar esperanza en tiempos de crisis. Líneas como *"Panic on the brain, world has gone insane"* capturaron perfectamente el estado emocional global de 2020.
+
+El videoclip fue igualmente innovador: **se grabó completamente durante el confinamiento**, con Josh y Tyler grabando desde sus respectivos hogares. El video muestra a ambos músicos tocando instrumentos en habitaciones de su casa, creando una estética íntima y auténtica que conectó profundamente con los fans que también estaban encerrados.
+
+Además, la canción generó un **ARG masivo**: la banda escondió pistas y acertijos en la canción y sus publicaciones, requiriendo que miles de fans trabajaran juntos para descifrarlos. Las ganancias de la canción se donaron parcialmente a organizaciones benéficas que combatían los efectos de la pandemia.

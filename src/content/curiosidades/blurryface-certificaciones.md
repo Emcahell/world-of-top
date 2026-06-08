@@ -1,0 +1,5 @@
+El álbum *Blurryface* (2015) se convirtió en un hito histórico en la industria musical: fue el **primer álbum en la historia en el que todas sus canciones recibieron, al menos, la certificación de Oro por la RIAA** (Asociación de Industria Discográfica de Estados Unidos). Esto significa que cada una de las 14 pistas del disco vendió al menos 500,000 unidades individuales.
+
+Para contextualizar la magnitud de este logro, hay que recordar que *Blurryface* fue también el álbum que incluyó *"Stressed Out"* y *"Ride"*, dos canciones que alcanzaron el Top 5 del Billboard Hot 100 simultáneamente. Un hecho extremadamente raro para una banda que, al momento del lanzamiento, todavía era considerada "alternativa".
+
+El éxito masivo de *Blurryface* demostró que Twenty One Pilots podía conectar con audiencias mucho más amplias que las de la música alternativa, y sentó las bases para que la banda se convirtiera en uno de los actos más importantes de su generación.

@@ -1,0 +1,7 @@
+Twenty One Pilots es una banda de **Columbus, Ohio**, y su conexión con esta ciudad es profunda y significativa. A diferencia de muchas bandas que migran a Los Ángeles o Nueva York para impulsar sus carreras, Tyler y Josh han mantenido un vínculo inquebrantable con su ciudad natal.
+
+Tyler Joseph nació y creció en Columbus, y fue en esta ciudad donde todo comenzó. Antes de dedicarse a la música, Tyler era un **talentoso jugador de baloncesto**: fue base del equipo de su instituto, Worthington Christian, y en 2008 su equipo llegó al segundo puesto del torneo estatal de Ohio. La disciplina y el trabajo en equipo que aprendió en la cancha se reflejan en su enfoque musical.
+
+La banda ha mantenido una relación muy estrecha con Columbus. Han realizado conciertos benéficos, y la ciudad ha sido un punto de referencia constante en su lore. **Dema, la ciudad ficticia del lore, se dice que está inspirada en Columbus**, con sus torres y su estructura circular. Incluso las coordenadas de dmaorg.info apuntaban a ubicaciones reales en la ciudad.
+
+Tyler estudió brevemente en la **Universidad Estatal de Ohio (Ohio State University)** antes de decidirse a dedicarse completamente a la música. Dejó la universidad para perseguir su sueño, algo que sus padres apoyaron a pesar de la incertidumbre. Columbus ha adoptado a Twenty One Pilots como sus embajadores culturales, con murales, eventos y lugares dedicados a la banda que se han convertido en puntos de peregrinaje para fans de todo el mundo.

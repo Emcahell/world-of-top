@@ -1,0 +1,7 @@
+En 2017, Twenty One Pilots ganó el **Grammy a Mejor Pop Duo/Group Performance** por su canción *"Stressed Out"* en la 59ª ceremonia de los Premios Grammy. Lo que hizo este momento verdaderamente memorable fue la forma en que lo recibieron: **Tyler y Josh subieron al escenario completamente en pantaleta**.
+
+Esta no fue una ocurrencia del momento. La apuesta se había hecho años antes, cuando la banda era poco conocida. Tyler y Josh habían prometido que si algún día ganaban un Grammy, lo aceptarían sin zapatos para recordarse a sí mismos que eran simplemente "dos chicos normales de Ohio". Cumplieron su promesa ante la sorpresa de todo el público y las cámaras de todo el mundo.
+
+Tyler dijo desde el escenario: *"Esto es para todos los que sueñan en grande, que la gente dice que nunca lo lograrán"*. El momento se convirtió en uno de los más icónicos en la historia reciente de los Grammy y demostró la personalidad única y despreocupada de la banda.
+
+A pesar de este reconocimiento masivo, la banda ha mantenido una relación humilde con la fama. Han continuado produciendo música desde el estudio casero de Tyler en Columbus, priorizando siempre la conexión con sus fans sobre las premiaciones comerciales.

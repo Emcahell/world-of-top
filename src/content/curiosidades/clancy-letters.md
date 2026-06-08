@@ -1,0 +1,7 @@
+Antes del lanzamiento de *Clancy* (2024), la banda publicó una serie de **cartas escritas desde la perspectiva de Clancy**, el protagonista del lore de Trench. Estas cartas fueron publicadas en dmaorg.info y luego en redes sociales, creando una narrativa que conectaba directamente *Trench* con el nuevo álbum.
+
+Cada carta revelaba detalles íntimos sobre la vida de Clancy en Trench, sus encuentros con los Banditos, y su lucha contra los Obispos de Dema. **Las cartas estaban escritas con un tono personal y confesional**, como si Clancy estuviera escribiendo su diario íntimo. El lenguaje era emocional y directo, lo que hacía que los sintieran como si estuvieran leyendo algo verdaderamente privado.
+
+Lo más fascinante es que las cartas contenían **pistas codificadas** sobre las canciones del nuevo álbum. Los fans descubrieron que ciertas palabras y frases resaltadas, cuando se organizaban de cierta forma, formaban parte de los títulos de las canciones. Algunas coordenadas en las cartas apuntaban a ubicaciones reales en Columbus, Ohio, donde la banda había dejado posters físicos como parte de la experiencia.
+
+Este formato de storytelling epistolar es extremadamente inusual en la música contemporánea y demuestra la dedicación de la banda a crear experiencias narrativas completas que van mucho más allá de la música.

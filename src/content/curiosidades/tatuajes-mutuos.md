@@ -1,0 +1,7 @@
+Uno de los momentos más icónicos y entrañables en la historia de Twenty One Pilots ocurrió cuando **Tyler Joseph y Josh Dun se tatuaron el uno al otro en pleno concierto**, ante la mirada de miles de fans.
+
+Todo comenzó cuando la banda organizó una **encuesta en Twitter** en la que los fans tenían que votar por Tyler o por Josh. La apuesta era simple: el integrante que obtuviera menos votos tendría que **tatuar el nombre del ganador en su pierna**. La competencia generó una enorme expectativa entre los fans, que votaron masivamente por su integrante favorito.
+
+Cuando se revelaron los resultados, **ambos integrantes quedaron completamente sorprendidos: la encuesta había terminado en empate exacto, 50% a 50%**. No había ganador ni perdedor, lo que significaba que ambos tenían que cumplir el castigo. Sin dudarlo, en pleno concierto, Tyler y Josh procedieron a tatuarse mutuamente sus nombres en las piernas.
+
+Hasta el día de hoy, **Josh lleva escrito "Tyler" en su pierna, y Tyler tiene "Josh" en la suya**. Estos tatuajes se han convertido en un símbolo de la conexión inseparable entre ambos músicos y de la relación de confianza y amistad que mantienen. Es un recordatorio físico de que Twenty One Pilots no es solo una banda: es una relación humana genuina que trasciende la música.

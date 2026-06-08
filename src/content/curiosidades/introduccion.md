@@ -1,0 +1,3 @@
+Twenty One Pilots no es solo una banda: es un universo completo. Detrás de cada canción, cada videoclip y cada concierto hay detalles que la mayoría de la gente pasa por alto. Desde el significado oculto del nombre hasta los Easter eggs más increíbles escondidos en sus obras, hay mucho más de lo que parece.
+
+Estas curiosidades revelan la creatividad obsesiva de Tyler Joseph y Josh Dun, dos músicos de Columbus, Ohio, que construyeron uno de los fandoms más apasionados y analíticos del mundo moderno. Prepárate para descubrir cosas sobre la banda que quizás no conocías.

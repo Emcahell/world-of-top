@@ -1,0 +1,5 @@
+El nombre oficial del fandom de Twenty One Pilots es **"Skeleton Clique"**, un término que surgió en los primeros años de la banda cuando los fans adoptaron la calavera como símbolo de identidad. La palabra "clique" (camarilla en inglés) refleja la naturaleza cerrada e íntima de la comunidad, como un grupo de amigos que comparte un secreto.
+
+Lo que hace especial a esta comunidad es su nivel de dedicación analítica. Los fans no solo escuchan la música: **investigan cada letra, cada videoclip y cada publicación en redes sociales** buscando pistas sobre el lore de la banda. Han creado wikis, foros y comunidades enteras dedicadas a descifrar los misterios de Dema y Trench.
+
+Tyler y Josh han reconocido y valorado públicamente esta conexión. En numerosas ocasiones han mencionado que los fans son una extensión de la banda misma, y que la comunidad que se ha formado alrededor de su música es algo que nunca imaginaron cuando empezaron. La relación entre la banda y sus fans es, posiblemente, una de las más genuinas y profundas en la música contemporánea.

@@ -1,0 +1,7 @@
+Los conciertos de Twenty One Pilots son conocidos por ser **experiencias únicas e inmersivas** que van mucho más allá de un simple recital. Tyler y Josh han creado un formato de show que combina música, teatro y conexión directa con el público de una forma que pocos artistas logran.
+
+Una de las tradiciones más icónicas es cuando **Josh sube a una plataforma elevada que es sostenida por el público** mientras toca un solo de batería. Este momento, conocido como el **"Drum Island"**, ha creado experiencias memorables en cada concierto que los fans esperan con emoción. Tyler, por su parte, suele **saltar al público y cantar rodeado de fans**, eliminando completamente la barrera entre el artismo y el público.
+
+Otra firma inconfundible de los shows es el **backflip de Josh Dun desde un piano** durante la interpretación de *"Holding On To You"*. Este movimiento acrobático se ha convertido en uno de los momentos más esperados y compartidos en redes sociales de cada concierto.
+
+Los shows también incluyen **elementos teatrales**: se usan máscaras, disfraces y se recrean escenas del lore en vivo. Durante la era de Trench, los conciertos tenían una atmósfera casi militar, con luces rojas y amarillas que evocaban el continente de Trench. **La iluminación siempre se coordina con la paleta de colores de cada era**: rojo y negro para *Blurryface*, amarillo para *Trench*, y azul/rosa para *Scaled and Icy*.

@@ -1,0 +1,7 @@
+La canción *"Car Radio"*, del álbum *Vessel* (2013), surgió de una experiencia real y profundamente personal de Tyler Joseph. Un día, Tyler llegó tarde a la universidad y, en su prisa, olvidó cerrar la puerta de su auto. Cuando regresó, **le habían robado la radio del vehículo**.
+
+Lo que parecía un simple robo se convirtió en un momento de revelación. Sin música para escuchar durante el viaje de regreso a casa, Tyler se vio obligado a conducir en completo silencio. Fue en ese momento cuando se dio cuenta de algo fundamental: **la música es una distracción perfecta para impedir que nuestra mente vaya a lugares en los que no debería estar**.
+
+Esa experiencia se transformó directamente en la canción. La letra explora la idea de que el silencio forzado nos confronta con nuestros pensamientos más oscuros y difíciles. La línea *"I have these thoughts so often I ought to replace that slot with what I once bought"* refleja esa lucha interna entre el ruido exterior y el ruido interior.
+
+*"Car Radio"* se ha convertido en una de las canciones más significativas del catálogo de Twenty One Pilots, no solo por su potente mensagem, sino porque representa perfectamente la filosofía de la banda: **usar la música como herramienta para procesar emociones difíciles, no como evasión de ellas**.

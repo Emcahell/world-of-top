@@ -1,0 +1,5 @@
+Twenty One Pilots es conocido, y frecuentemente elogiado, por su capacidad de **mezclar géneros radicalmente distintos dentro de una misma canción**. No es raro encontrar pistas que fusionan rock, hip-hop, electrónica, pop y reggae, todo en una duración de menos de cuatro minutos.
+
+Esta diversidad se debe en parte a que Tyler Joseph creció escuchando una amplia variedad de música. Desde hip-hop y rap hasta bandas de rock alternativo y música electrónica, sus influencias son extremadamente diversas. En canciones como *"Heavydirtysoul"*, puedes pasar de un verso rapido y percusivo a un coro melódico de rock alternativo en cuestión de segundos.
+
+Esta capacidad de fusión ha sido tanto una fortaleza como un desafío para la banda. **La crítica musical ha sido mixta** en su recepción de este enfoque, con algunos elogiando la creatividad y otros cuestionando la coherencia. Sin embargo, los fans han abrazado esta diversidad como una de las cualidades más valiosas de la banda, y es precisamente lo que hace que cada álbum sea una experiencia impredecible y emocionante.

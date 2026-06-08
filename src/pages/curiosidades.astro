@@ -1,10 +1,492 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+
+// Import markdown content
+import { compiledContent as introContent } from "../content/curiosidades/introduccion.md";
+import { compiledContent as nombreContent } from "../content/curiosidades/nombre-de-la-banda.md";
+import { compiledContent as ukuleleContent } from "../content/curiosidades/ukulele-de-tyler.md";
+import { compiledContent as joshContent } from "../content/curiosidades/josh-reemplazo.md";
+import { compiledContent as skeletonContent } from "../content/curiosidades/skeleton-clique.md";
+import { compiledContent as logoContent } from "../content/curiosidades/cambio-de-logo.md";
+import { compiledContent as grammyContent } from "../content/curiosidades/grammy.md";
+import { compiledContent as dmaorgContent } from "../content/curiosidades/dmaorg.md";
+import { compiledContent as clancyContent } from "../content/curiosidades/clancy-letters.md";
+import { compiledContent as nivelContent } from "../content/curiosidades/nivel-de-preocupacion.md";
+import { compiledContent as columbusContent } from "../content/curiosidades/columbus-ohio.md";
+import { compiledContent as showsContent } from "../content/curiosidades/shows-en-vivo.md";
+import { compiledContent as hiddenContent } from "../content/curiosidades/hidden-messages.md";
+import { compiledContent as blurryfaceCertContent } from "../content/curiosidades/blurryface-certificaciones.md";
+import { compiledContent as sinGuitarrasContent } from "../content/curiosidades/sin-guitarras.md";
+import { compiledContent as generosContent } from "../content/curiosidades/generos-musicales.md";
+import { compiledContent as mascarasContent } from "../content/curiosidades/mascaras-anonimato.md";
+import { compiledContent as tylerBasquetbolContent } from "../content/curiosidades/tyler-basquetbol.md";
+import { compiledContent as kitchenSinkContent } from "../content/curiosidades/kitchen-sink.md";
+import { compiledContent as blurryfacePersonajeContent } from "../content/curiosidades/blurryface-personaje.md";
+import { compiledContent as feCristianaContent } from "../content/curiosidades/fe-cristiana.md";
+import { compiledContent as carRadioContent } from "../content/curiosidades/car-radio.md";
+import { compiledContent as tatuajesContent } from "../content/curiosidades/tatuajes-mutuos.md";
+
+// Import images
+import pilotsMascara from "../assets/pilots-mascara.webp";
+import backgroundImg from "../assets/top-clancy.webp";
+import tylerJosh from "../assets/tyler-&-josh.webp";
+import grammyImg from "../assets/origen-top/grammy-top.webp";
+import dmaorgImg from "../assets/eras/poster-dema.webp";
+
+import clancyImg from "../assets/eras/i-am-clancy.webp";
+import paladinImg from "../assets/eras/Paladin-Strait.webp";
+import logosImg from "../assets/origen-top/twentyonepilots-in-letters.webp";
+import niveauImg from "../assets/eras/navigating-twenty-one-pilots.webp";
+import columbusImg from "../assets/origen-top/tyler-and-Josh.webp";
+import showsImg from "../assets/eras/perfonmace-submarino.webp";
+import hiddenImg from "../assets/eras/ty-con-los-banditos-trench.webp";
+import blurryfaceCover from "../assets/logos-y-portadas/Blurryface-cover.webp";
+import vesselCover from "../assets/logos-y-portadas/Twenty_One_Pilots-Vessel-cover.webp";
+import tylerImg from "../assets/page-lore/tyler.webp";
+
+import obispoImg from "../assets/eras/obispo-blurryface.webp";
+import banditosImg from "../assets/page-lore/banditos.webp";
+import silenceImg from "../assets/page-lore/silence-towers-buitres.webp";
+import tyMontanaImg from "../assets/eras/ty-montana-banditos.webp";
+import mascarasImg from "../assets/eras/tyler-blurryface-heavydirtysoul.webp";
+
+// Resolve markdown content to HTML strings
+const introHtml = await introContent();
+const nombreHtml = await nombreContent();
+const ukuleleHtml = await ukuleleContent();
+const joshHtml = await joshContent();
+const skeletonHtml = await skeletonContent();
+const logoHtml = await logoContent();
+const grammyHtml = await grammyContent();
+const dmaorgHtml = await dmaorgContent();
+const clancyHtml = await clancyContent();
+const nivelHtml = await nivelContent();
+const columbusHtml = await columbusContent();
+const showsHtml = await showsContent();
+const hiddenHtml = await hiddenContent();
+const blurryfaceCertHtml = await blurryfaceCertContent();
+const sinGuitarrasHtml = await sinGuitarrasContent();
+const generosHtml = await generosContent();
+const mascarasHtml = await mascarasContent();
+const tylerBasquetbolHtml = await tylerBasquetbolContent();
+const kitchenSinkHtml = await kitchenSinkContent();
+const blurryfacePersonajeHtml = await blurryfacePersonajeContent();
+const feCristianaHtml = await feCristianaContent();
+const carRadioHtml = await carRadioContent();
+const tatuajesHtml = await tatuajesContent();
 ---
 
 <Layout>
-    <Header />
+  <Header />
 
-    <main></main>
+  <main class="bg-[#231f20] min-h-screen font-roboto relative overflow-hidden">
+    <!-- Background image with overlay -->
+    <div class="fixed inset-0 z-0">
+      <img src={backgroundImg.src} alt="" class="w-full h-full object-cover opacity-[0.12]" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[#231f20]/90 via-[#231f20]/70 to-[#231f20]/95"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+
+      <!-- Hero Title -->
+      <section class="text-center mb-16">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-white tracking-wider mb-8">
+          Cosas que debes saber sobre Twenty One Pilots
+        </h1>
+        <div class="relative inline-block">
+          <img
+            src={pilotsMascara.src}
+            alt="Twenty One Pilots"
+            class="w-full max-w-2xl rounded-2xl shadow-2xl border border-white/10"
+          />
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/40 to-transparent"></div>
+        </div>
+      </section>
+
+      <!-- Intro Content -->
+      <section class="mb-16">
+        <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-2xl p-6 md:p-10 border border-white/5 shadow-xl" set:html={introHtml} />
+      </section>
+
+      <!-- Section Divider: Origen y Fundación -->
+      <section class="text-center mb-16">
+        <h2 class="text-2xl md:text-3xl font-bold uppercase text-white tracking-wider mb-8 relative inline-block">
+          Origen y fundación
+          <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#d62420] to-[#ffd800]"></span>
+        </h2>
+        <div class="relative inline-block mt-4">
+          <img
+            src={tylerJosh.src}
+            alt="Tyler y Josh"
+            class="w-full max-w-2xl rounded-2xl shadow-2xl border border-white/10"
+          />
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/40 to-transparent"></div>
+        </div>
+      </section>
+
+      <!-- Nombre de la banda -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">El nombre de la banda</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={nombreHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={logosImg.src} alt="Logo de Twenty One Pilots" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Ukelele de Tyler -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={columbusImg.src} alt="Tyler Joseph" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">El ukelele de Tyler</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={ukuleleHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Josh reemplazo -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">Josh: el reemplazo perfecto</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={joshHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={showsImg.src} alt="Josh Dun" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Tyler baloncesto -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={tylerImg.src} alt="Tyler Joseph" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Tyler: el jugador de baloncesto</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={tylerBasquetbolHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Columbus, Ohio -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Columbus, Ohio: su ciudad</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={columbusHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={paladinImg.src} alt="Twenty One Pilots" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider: Música y Sonido -->
+      <section class="text-center mb-16 mt-20">
+        <h2 class="text-2xl md:text-3xl font-bold uppercase text-white tracking-wider relative inline-block">
+          Música y sonido
+          <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#4545dd] to-[#d62420]"></span>
+        </h2>
+      </section>
+
+      <!-- Sin guitarras -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={vesselCover.src} alt="Vessel Album" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">Una banda sin guitarras</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={sinGuitarrasHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Géneros musicales -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Mezclando mundos musicales</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={generosHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={niveauImg.src} alt="Twenty One Pilots" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Car Radio -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">"Car Radio": silencio forzado</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={carRadioHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={vesselCover.src} alt="Vessel - Car Radio" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Kitchen Sink -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={hiddenImg.src} alt="Twenty One Pilots" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">"Kitchen Sink": arte sin explicación</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={kitchenSinkHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider: El Lore y sus Personajes -->
+      <section class="text-center mb-16 mt-20">
+        <h2 class="text-2xl md:text-3xl font-bold uppercase text-white tracking-wider relative inline-block">
+          El lore y sus personajes
+          <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#ffd800] to-[#4545dd]"></span>
+        </h2>
+      </section>
+
+      <!-- Blurryface personaje -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Blurryface: más que un álbum</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={blurryfacePersonajeHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={obispoImg.src} alt="Obispo Blurryface" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Blurryface certificaciones -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={blurryfaceCover.src} alt="Blurryface Album" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Récord histórico con Blurryface</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={blurryfaceCertHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- dmaorg.info -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">dmaorg.info</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={dmaorgHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={dmaorgImg.src} alt="Dema" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Clancy Letters -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={clancyImg.src} alt="I Am Clancy" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Las cartas de Clancy</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={clancyHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider: La Comunidad y los Shows -->
+      <section class="text-center mb-16 mt-20">
+        <h2 class="text-2xl md:text-3xl font-bold uppercase text-white tracking-wider relative inline-block">
+          La comunidad y los shows
+          <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#d62420] to-[#ffd800]"></span>
+        </h2>
+      </section>
+
+      <!-- Skeleton Clique -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Skeleton Clique</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={skeletonHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={banditosImg.src} alt="Skeleton Clique" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Máscaras de anonimato -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={mascarasImg.src} alt="Tyler con máscara de Blurryface" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">Las máscaras del anonimato</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={mascarasHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Cambio de logo -->
+      <section class="mb-12">
+        <div class="lore-entry">
+          <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Un logo diferente en cada era</h3>
+          <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={logoHtml} />
+        </div>
+      </section>
+
+      <!-- Grammy -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">El Grammy en pantaleta</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={grammyHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={grammyImg.src} alt="Grammy" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Shows en vivo -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={showsImg.src} alt="Shows en vivo" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Shows en vivo inolvidables</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={showsHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Level of Concern -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 items-center">
+          <div class="lore-entry order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">Nivel de Preocupación</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={nivelHtml} />
+          </div>
+          <div class="flex justify-center order-1 md:order-2">
+            <img src={tyMontanaImg.src} alt="Level of Concern" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Mensajes ocultos -->
+      <section class="mb-12">
+        <div class="lore-entry">
+          <h3 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-4 uppercase tracking-wide">Mensajes ocultos en cada detalle</h3>
+          <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={hiddenHtml} />
+        </div>
+      </section>
+
+      <!-- Section Divider: Detalles Personales -->
+      <section class="text-center mb-16 mt-20">
+        <h2 class="text-2xl md:text-3xl font-bold uppercase text-white tracking-wider relative inline-block">
+          Detalles personales
+          <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#ffd800] to-[#d62420]"></span>
+        </h2>
+      </section>
+
+      <!-- Tatuajes mutuos -->
+      <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={tyMontanaImg.src} alt="Tyler y Josh" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#4545dd] mb-4 uppercase tracking-wide">Tatuajes en pleno concierto</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={tatuajesHtml} />
+          </div>
+        </div>
+      </section>
+
+      <!-- Fe cristiana -->
+      <section class="mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+          <div class="flex justify-center">
+            <img src={silenceImg.src} alt="Torres del Silencio" loading="lazy" class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="lore-entry">
+            <h3 class="text-xl md:text-2xl font-bold text-[#d62420] mb-4 uppercase tracking-wide">Fe y espiritualidad</h3>
+            <div class="lore-content bg-[#2a2526]/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/5" set:html={feCristianaHtml} />
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
 </Layout>
+
+<style>
+  /* Lore content styling */
+  :global(.lore-content p) {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #e5e5e5;
+    text-indent: 2rem;
+  }
+  :global(.lore-content p:first-child) {
+    text-indent: 0;
+  }
+  :global(.lore-content p:last-child) {
+    margin-bottom: 0;
+  }
+  :global(.lore-content strong) {
+    color: #ffd800;
+    font-weight: 700;
+  }
+  :global(.lore-content em) {
+    color: #d62420;
+    font-style: italic;
+  }
+
+  /* Entry title underline */
+  .lore-entry h3 {
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .lore-entry h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #d62420, #ffd800);
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  section {
+    animation: fadeInUp 0.6s ease-out both;
+  }
+</style>

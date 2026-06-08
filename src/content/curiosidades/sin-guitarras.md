@@ -1,0 +1,5 @@
+Una de las características más distintivas de Twenty One Pilots es que, durante gran parte de su carrera, **ninguno de los dos integrantes principales toca la guitarra**. Esto es altamente inusual para una banda de rock alternativo, pero es precisamente lo que les da su sonido único.
+
+En lugar de guitarras, su sonido fue construido originalmente a partir de **piano, sintetizadores, batería y el uso prominente del ukelele**. Tyler Joseph es el encargado de las melodías, las letras y los teclados, mientras que Josh Dun aporta una batería técnica y agresiva que le da un toque orgánico y en vivo a lo que frecuentemente es una producción electrónica.
+
+Esta decisión de no usar guitarra fue intencional desde el principio. Tyler ha explicado que quería que Twenty One Pilots sonara diferente a todo lo que existía, y la guitarra era un instrumento demasiado asociado con el rock tradicional. Al eliminarla, el dúo se vio obligado a encontrar **formas creativas de construir energía y textura** usando otros instrumentos, lo que eventualmente se convirtió en su sello distintivo.

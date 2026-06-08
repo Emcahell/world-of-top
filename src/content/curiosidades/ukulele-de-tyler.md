@@ -1,0 +1,5 @@
+Todo comenzó cuando Tyler Joseph tenía 14 años. Como premio por una competencia escolar, su madre le regaló un ukelele. Con ese sencillo instrumento empezó a componer sus primeras canciones, muchas de las cuales eventualmente se transformaron en los temas que definieron el sonido temprano de Twenty One Pilots.
+
+Antes de formar la banda, Tyler grabó un álbum en solitario llamado *No. 131271* en 2007, cuando todavía era adolescente. El número del título corresponde al código de un pasatiempo que hacía frecuentemente. Aunque es un disco casero y poco conocido, varias de sus canciones fueron reescritas para los primeros álbumes de la banda, como *"Trees"* y *"Marching Band"*.
+
+Lo interesante es que el ukelele sigue siendo un instrumento fundamental en el sonido de Twenty One Pilots. Aparece prominentemente en canciones icónicas como *"House of Gold"* y *"Can't Help Falling in Love"* (un cover de Elvis Presley), demostrando que Tyler nunca olvidó sus raíces musicales más simples.

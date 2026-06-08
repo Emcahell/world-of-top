@@ -1,0 +1,5 @@
+Josh Dun no fue el primer baterista de Twenty One Pilots. La banda original era un trío conformado por Tyler Joseph, **Nick Thomas** y **Chris Salih**, quienes formaron el grupo en Columbus, Ohio en 2009. Chris trabajaba en Fueled by Ramen, lo que ayudó a la banda a conseguir su primer contrato discográfico.
+
+En 2011, tanto Chris como Nick dejaron la banda para seguir otros caminos. Josh Dun, que había estado tocando la batería en una banda local llamada **House of Heroes**, fue contactado por Chris para reemplazarlo. Lo fascinante es que Josh trabajaba en un **Guitar Center** cuando recibió la llamada, y literalmente dejó su trabajo para unirse a Twenty One Pilots.
+
+Tyler y Josh no se conocían personalmente antes de que Josh se uniera a la banda. A pesar de eso, desarrollaron una conexión musical instantánea que se convirtió en el corazón sonoro de Twenty One Pilots. Josh ha dicho en entrevistas que su primera semana con la banda fue como si hubieran tocado juntos toda la vida. Esta química natural es lo que ha permitido que el dúo mantenga un sonido tan único y cohesivo durante más de una década.

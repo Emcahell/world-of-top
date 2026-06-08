@@ -1,0 +1,5 @@
+El nombre "Twenty One Pilots" proviene de la obra de teatro *All My Sons* (1947) de Arthur Miller. En la historia, un hombre que fabricaba piezas de aviones durante la Segunda Guerra Mundial envía componentes defectuosos a la línea de producción, provocando la muerte de 21 pilotos. El personaje principal enfrenta una decisión moral devastadora: confesar sus actos y perder todo, o callar y vivir con la culpa.
+
+Tyler Joseph leyó esta obra durante sus estudios en la Universidad Estatal de Ohio y se sintió profundamente conectado con el dilema moral central. Para él, el nombre representaba la idea de que **las decisiones que tomamos tienen consecuencias que afectan directamente a otros**, un tema que atraviesa toda la música de la banda.
+
+Lo más curioso es que antes de llamarse Twenty One Pilots, el proyecto pasó por varios nombres incluyendo *"Skeleton Clique"* y *"Ship of Theseus"*. El nombre definitivo se quedó porque, según Tyler, "siempre quería que la gente supiera que hay una historia detrás de cada decisión".

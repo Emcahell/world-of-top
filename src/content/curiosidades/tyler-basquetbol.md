@@ -1,0 +1,7 @@
+Antes de dedicarse completamente a la música, Tyler Joseph era un **talentoso jugador de baloncesto**. Fue base del equipo de su instituto, **Worthington Christian**, y en 2008 su equipo llegó al **segundo puesto del torneo estatal de Ohio**. Esta experiencia deportiva dejó una marca permanente en su personalidad y su enfoque hacia la música.
+
+La disciplina, el trabajo en equipo y la mentalidad competitiva que desarrolló en la cancha se reflejan directamente en su carrera musical. Tyler ha mencionado en entrevistas que el baloncesto le enseñó la importancia de la **preparación, la constancia y la capacidad de performar bajo presión**. Todo habilidades que resultan esenciales para un artista que frente a miles de personas cada noche.
+
+Incluso después de que la banda se hizo famosa, Tyler mantuvo el baloncesto como una forma de ejercicio y escape. Se le ha visto jugando en canchas públicas de Columbus durante su tiempo libre, y occasionally comparte videos de sus sesiones de baloncesto en redes sociales.
+
+Esta faceta deportiva de Tyler agrega otra dimensión a su personalidad y demuestra que su camino hacia la música no fue lineal, sino que estuvo lleno de pasiones y talentos diversos que eventualmente convergieron en Twenty One Pilots.
