@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/index/Footer.astro";
 
 // Import markdown content
 import { compiledContent as introContent } from "../content/lore/introduccion.md";
@@ -303,6 +304,8 @@ const obisposListHtml = await obisposListContent();
 
     </div>
   </main>
+
+  <Footer />
 </Layout>
 
 <style>

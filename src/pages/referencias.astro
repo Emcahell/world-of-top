@@ -1,0 +1,158 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/index/Footer.astro";
+import backgroundImg from "../assets/top-clancy.webp";
+---
+
+<Layout>
+  <Header />
+
+  <main class="bg-[#231f20] min-h-screen font-roboto relative overflow-hidden">
+    <!-- Background image with overlay -->
+    <div class="fixed inset-0 z-0">
+      <img src={backgroundImg.src} alt="" class="w-full h-full object-cover opacity-[0.12]" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[#231f20]/90 via-[#231f20]/70 to-[#231f20]/95"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+
+      <!-- Hero Title -->
+      <section class="text-center mb-16">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-white tracking-wider mb-6">
+          Referencias
+        </h1>
+        <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          Fuentes de información utilizadas para la creación de este sitio web.
+          Todo el contenido ha sido recopilado y verificado a través de las siguientes fuentes.
+        </p>
+      </section>
+
+      <!-- References List -->
+      <section class="mb-20">
+        <div class="bg-[#2a2526]/80 backdrop-blur-sm rounded-2xl p-6 md:p-10 border border-white/5 shadow-xl">
+
+          <h2 class="text-xl md:text-2xl font-bold text-[#ffd800] mb-8 uppercase tracking-wide relative pb-4">
+            Fuentes consultadas
+            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#d62420] to-[#ffd800]"></span>
+          </h2>
+
+          <ul class="space-y-6">
+            <!-- Reference 1 -->
+            <li class="group">
+              <div class="flex gap-4">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#d62420]/20 border border-[#d62420]/30 flex items-center justify-center text-[#d62420] text-sm font-bold mt-0.5">1</span>
+                <div>
+                  <p class="text-white font-semibold text-sm md:text-base mb-1">Wikipedia, Twenty One Pilots</p>
+                  <p class="text-gray-500 text-xs mb-2">Diciembre de 2024</p>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Twenty_One_Pilots"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[#4545dd] text-sm hover:text-[#ffd800] transition-colors duration-300 break-all"
+                  >
+                    https://en.wikipedia.org/wiki/Twenty_One_Pilots
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Reference 2 -->
+            <li class="group">
+              <div class="flex gap-4">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#ffd800]/20 border border-[#ffd800]/30 flex items-center justify-center text-[#ffd800] text-sm font-bold mt-0.5">2</span>
+                <div>
+                  <p class="text-white font-semibold text-sm md:text-base mb-1">Wikipedia, Clancy</p>
+                  <p class="text-gray-500 text-xs mb-2">Diciembre de 2024</p>
+                  <a
+                    href="https://es.wikipedia.org/wiki/Clancy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[#4545dd] text-sm hover:text-[#ffd800] transition-colors duration-300 break-all"
+                  >
+                    https://es.wikipedia.org/wiki/Clancy
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Reference 3 -->
+            <li class="group">
+              <div class="flex gap-4">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#d62420]/20 border border-[#d62420]/30 flex items-center justify-center text-[#d62420] text-sm font-bold mt-0.5">3</span>
+                <div>
+                  <p class="text-white font-semibold text-sm md:text-base mb-1">xpalipalix, Welcome To Trench</p>
+                  <p class="text-gray-500 text-xs mb-2">Mayo 2024 · Comienzo de la era final</p>
+                  <span class="text-gray-400 text-sm italic">Documento PDF</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Reference 4 -->
+            <li class="group">
+              <div class="flex gap-4">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#ffd800]/20 border border-[#ffd800]/30 flex items-center justify-center text-[#ffd800] text-sm font-bold mt-0.5">4</span>
+                <div>
+                  <p class="text-white font-semibold text-sm md:text-base mb-1">No Hay Chances</p>
+                  <p class="text-gray-500 text-xs mb-2">Febrero 2024 · Twenty One Pilots comienza su nueva era</p>
+                  <a
+                    href="https://www.nohaychances.com/post/twenty-one-pilots-comienza-su-nueva-era"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[#4545dd] text-sm hover:text-[#ffd800] transition-colors duration-300 break-all"
+                  >
+                    https://www.nohaychances.com/post/twenty-one-pilots-comienza-su-nueva-era
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Reference 5 -->
+            <li class="group">
+              <div class="flex gap-4">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#d62420]/20 border border-[#d62420]/30 flex items-center justify-center text-[#d62420] text-sm font-bold mt-0.5">5</span>
+                <div>
+                  <p class="text-white font-semibold text-sm md:text-base mb-1">The Broken Record</p>
+                  <p class="text-gray-500 text-xs mb-2">Junio 2024 · La historia de Clancy y su final en Paladin Strait</p>
+                  <a
+                    href="https://youtu.be/dWf3CT_W4mk?si=6M9IcbzN7-KsFCRB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[#4545dd] text-sm hover:text-[#ffd800] transition-colors duration-300 break-all"
+                  >
+                    https://youtu.be/dWf3CT_W4mk
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Additional note -->
+          <div class="mt-10 pt-8 border-t border-white/5">
+            <p class="text-gray-500 text-xs leading-relaxed text-center">
+              Se han utilizado fuentes adicionales como el sitio oficial de Twenty One Pilots,
+              la comunidad de Reddit (r/twentyonepilots), y la Twenty One Pilots Wiki para
+              complementar y verificar la información presentada en este sitio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style is:global>
+  /* Entry title underline */
+  h2 {
+    position: relative;
+  }
+
+  /* Hover effect on reference items */
+  li:hover span:first-child {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+</style>
