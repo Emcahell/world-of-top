@@ -1,4 +1,4 @@
-En 2017, Twenty One Pilots ganó el **Grammy a Mejor Pop Duo/Group Performance** por su canción *"Stressed Out"* en la 59ª ceremonia de los Premios Grammy. Lo que hizo este momento verdaderamente memorable fue la forma en que lo recibieron: **Tyler y Josh subieron al escenario completamente en pantaleta**.
+En 2017, Twenty One Pilots ganó el **Grammy a Mejor Pop Duo/Group Performance** por su canción *"Stressed Out"* en la 59ª ceremonia de los Premios Grammy. Lo que hizo este momento verdaderamente memorable fue la forma en que lo recibieron: **Tyler y Josh subieron al escenario completamente en calzones**.
 
 Esta no fue una ocurrencia del momento. La apuesta se había hecho años antes, cuando la banda era poco conocida. Tyler y Josh habían prometido que si algún día ganaban un Grammy, lo aceptarían sin zapatos para recordarse a sí mismos que eran simplemente "dos chicos normales de Ohio". Cumplieron su promesa ante la sorpresa de todo el público y las cámaras de todo el mundo.
 
