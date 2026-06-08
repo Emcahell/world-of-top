@@ -28,6 +28,8 @@ import { compiledContent as feCristianaContent } from "../content/curiosidades/f
 import { compiledContent as carRadioContent } from "../content/curiosidades/car-radio.md";
 import { compiledContent as tatuajesContent } from "../content/curiosidades/tatuajes-mutuos.md";
 
+import { Image } from "astro:assets";
+
 // Import images
 import pilotsMascara from "../assets/pilots-mascara.webp";
 import backgroundImg from "../assets/top-clancy.webp";
@@ -89,8 +91,8 @@ const tatuajesHtml = await tatuajesContent();
     >
         <!-- Background image with overlay -->
         <div class="fixed inset-0 z-0">
-            <img
-                src={backgroundImg.src}
+            <Image
+                src={backgroundImg}
                 alt=""
                 class="w-full h-full object-cover opacity-[0.12]"
             />
@@ -111,8 +113,8 @@ const tatuajesHtml = await tatuajesContent();
                     Cosas que debes saber sobre Twenty One Pilots
                 </h1>
                 <div class="relative inline-block">
-                    <img
-                        src={pilotsMascara.src}
+                    <Image
+                        src={pilotsMascara}
                         alt="Twenty One Pilots"
                         class="w-full max-w-2xl rounded-2xl shadow-2xl border border-white/10"
                     />
@@ -142,8 +144,8 @@ const tatuajesHtml = await tatuajesContent();
                     ></span>
                 </h2>
                 <div class="relative inline-block mt-4">
-                    <img
-                        src={tylerJosh.src}
+                    <Image
+                        src={tylerJosh}
                         alt="Tyler y Josh"
                         class="w-full max-w-2xl rounded-2xl shadow-2xl border border-white/10"
                     />
@@ -171,8 +173,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={logosImg.src}
+                        <Image
+                            src={logosImg}
                             alt="Logo de Twenty One Pilots"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -187,8 +189,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={ukeleleTylerImg.src}
+                        <Image
+                            src={ukeleleTylerImg}
                             alt="Tyler Joseph"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -225,8 +227,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={joshDrum.src}
+                        <Image
+                            src={joshDrum}
                             alt="Josh Dun"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -241,8 +243,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={tylerBasketImg.src}
+                        <Image
+                            src={tylerBasketImg}
                             alt="Tyler Joseph"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -279,8 +281,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={topColumbusImg.src}
+                        <Image
+                            src={topColumbusImg}
                             alt="Twenty One Pilots"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -307,8 +309,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={topLiveImg.src}
+                        <Image
+                            src={topLiveImg}
                             alt="TOP Live"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -345,8 +347,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={niveauImg.src}
+                        <Image
+                            src={niveauImg}
                             alt="Twenty One Pilots"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -372,8 +374,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={vesselCover.src}
+                        <Image
+                            src={vesselCover}
                             alt="Vessel - Car Radio"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -388,8 +390,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={hiddenImg.src}
+                        <Image
+                            src={hiddenImg}
                             alt="Twenty One Pilots"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -438,8 +440,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={obispoImg.src}
+                        <Image
+                            src={obispoImg}
                             alt="Obispo Blurryface"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -454,8 +456,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={blurryfaceCover.src}
+                        <Image
+                            src={blurryfaceCover}
                             alt="Blurryface Album"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -492,8 +494,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={dmaOrgInfoImg.src}
+                        <Image
+                            src={dmaOrgInfoImg}
                             alt="Dema"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -508,8 +510,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={letterClancyImg.src}
+                        <Image
+                            src={letterClancyImg}
                             alt="Letters Clancy"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -558,8 +560,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={banditosImg.src}
+                        <Image
+                            src={banditosImg}
                             alt="Skeleton Clique"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -574,8 +576,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={topMaskImg.src}
+                        <Image
+                            src={topMaskImg}
                             alt="Tyler con máscara de Blurryface"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -627,8 +629,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={grammyImg.src}
+                        <Image
+                            src={grammyImg}
                             alt="Grammy"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -643,8 +645,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={drumIslandImg.src}
+                        <Image
+                            src={drumIslandImg}
                             alt="Shows en vivo"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -681,8 +683,8 @@ const tatuajesHtml = await tatuajesContent();
                         />
                     </div>
                     <div class="flex justify-center order-1 md:order-2">
-                        <img
-                            src={LevelOfConcernImg.src}
+                        <Image
+                            src={LevelOfConcernImg}
                             alt="Level of Concern"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -724,8 +726,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={tatooTyJosh.src}
+                        <Image
+                            src={tatooTyJosh}
                             alt="Tyler y Josh"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"
@@ -751,8 +753,8 @@ const tatuajesHtml = await tatuajesContent();
                     class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center"
                 >
                     <div class="flex justify-center">
-                        <img
-                            src={silenceImg.src}
+                        <Image
+                            src={silenceImg}
                             alt="Torres del Silencio"
                             loading="lazy"
                             class="w-full max-w-[280px] rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300"

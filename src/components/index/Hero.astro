@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import ImgBoys from "../../assets/boys-hero.webp";
 import ImgDesktopHero from "../../assets/desktop-hero.webp";
 import ImgMobileHero from "../../assets/mobile-hero.webp";
@@ -18,8 +19,8 @@ import ImgMobileHero from "../../assets/mobile-hero.webp";
     </picture>
 
     <!-- Boys Image (Left Side) -->
-    <img
-        src={ImgBoys.src}
+    <Image
+        src={ImgBoys}
         alt="Tyler and Josh"
         class="absolute z-20 w-[240px] sm:w-[300px] md:w-[360px] top-[30%] md:top-auto md:bottom-[15%] left-[2%] md:left-[5%] object-contain pointer-events-none drop-shadow-xl [mask-image:linear-gradient(black_80%,transparent)]"
     />
@@ -39,10 +40,12 @@ import ImgMobileHero from "../../assets/mobile-hero.webp";
             De
         </h2>
 
-        <img
+        <Image
             src="/TWENTYONEPILOTS.svg"
             alt="twenty one pilots"
             class="w-[90%] md:w-[80%] max-w-[900px] h-auto drop-shadow-2xl"
+            width={900}
+            height={200}
         />
     </div>
 
