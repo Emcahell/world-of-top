@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/index/Footer.astro";
 import { Image } from "astro:assets";
 
 // Import markdown content
@@ -40,396 +41,724 @@ import clancyCover from "../assets/logos-y-portadas/Clancy-cover.webp";
 ---
 
 <Layout>
-  <Header />
+    <Header />
 
-  <main class="bg-[#231f20] min-h-screen text-white font-roboto">
-    <!-- Hero Title Section -->
-    <section class="py-16 px-4 md:px-8 lg:px-16 flex flex-col items-center text-center">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-8 tracking-wide">
-        Conoce la historia de la banda y sus integrantes.
-      </h1>
-      <Image
-        src={typeLogo}
-        alt="Twenty One Pilots Logo"
-        class="w-64 md:w-80 lg:w-96 bg-[#ffd800] p-4 rounded-xl"
-        loading="eager"
-      />
-    </section>
+    <main class="bg-[#231f20] min-h-screen text-white font-roboto">
+        <!-- Hero Title Section -->
+        <section
+            class="py-16 px-4 md:px-8 lg:px-16 flex flex-col items-center text-center"
+        >
+            <h1
+                class="text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-8 tracking-wide"
+            >
+                Conoce la historia de la banda y sus integrantes.
+            </h1>
+            <Image
+                src={typeLogo}
+                alt="Twenty One Pilots Logo"
+                class="w-64 md:w-80 lg:w-96 bg-[#ffd800] p-4 rounded-xl"
+                loading="eager"
+            />
+        </section>
 
-    <!-- Timeline Section -->
-    <section class="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-12 pb-20">
-      <!-- Timeline Line (centered) -->
-      <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#ffd800] via-[#d62420] to-[#ffd800] transform md:-translate-x-1/2"></div>
-
-      <!-- ======================== -->
-      <!-- INTRODUCTION             -->
-      <!-- ======================== -->
-      <div class="relative mb-20 md:mb-32">
-        <div class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#ffd800] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"></div>
-
-        <!-- Mobile: card first, then images -->
-        <div class="md:hidden ml-12 space-y-4">
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10">
-            <h2 class="text-2xl font-bold text-[#ffd800] mb-3">¿Qué es Twenty One Pilots?</h2>
-            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm">
-              <IntroContent />
+        <!-- Timeline Section -->
+        <section class="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-12 pb-20">
+            <!-- Timeline Line (centered) -->
+            <div
+                class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#ffd800] via-[#d62420] to-[#ffd800] transform md:-translate-x-1/2"
+            >
             </div>
-          </div>
-          <Image src={actualMembers} alt="Integrantes actuales" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-          <Image src={ancientMembers} alt="Antiguos integrantes" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-        </div>
 
-        <!-- Desktop: images LEFT, card RIGHT, gap centered at 50% -->
-        <div class="hidden md:flex items-start">
-          <div class="w-1/2 flex justify-end pr-6">
-            <div class="w-[85%] flex flex-col gap-4">
-              <Image src={actualMembers} alt="Integrantes actuales" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-              <Image src={ancientMembers} alt="Antiguos integrantes" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-            </div>
-          </div>
-          <div class="w-1/2 pl-6">
-            <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10">
-              <h2 class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-4">¿Qué es Twenty One Pilots?</h2>
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <IntroContent />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- ======================== -->
+            <!-- INTRODUCTION             -->
+            <!-- ======================== -->
+            <div class="relative mb-20 md:mb-32">
+                <div
+                    class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#ffd800] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"
+                >
+                </div>
 
-      <!-- ======================== -->
-      <!-- 2001 - 2010              -->
-      <!-- ======================== -->
-      <div class="relative mb-20 md:mb-32">
-        <div class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#d62420] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"></div>
+                <!-- Mobile: card first, then images -->
+                <div class="md:hidden ml-12 space-y-4">
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10"
+                    >
+                        <h2 class="text-2xl font-bold text-[#ffd800] mb-3">
+                            ¿Qué es Twenty One Pilots?
+                        </h2>
+                        <div
+                            class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm"
+                        >
+                            <IntroContent />
+                        </div>
+                    </div>
+                    <Image
+                        src={actualMembers}
+                        alt="Integrantes actuales"
+                        class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                    <Image
+                        src={ancientMembers}
+                        alt="Antiguos integrantes"
+                        class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                </div>
 
-        <div class="md:hidden ml-12 space-y-4">
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10">
-            <h2 class="text-2xl font-bold text-[#d62420] mb-3">2001 - 2010</h2>
-            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm">
-              <Content2001 />
+                <!-- Desktop: images LEFT, card RIGHT, gap centered at 50% -->
+                <div class="hidden md:flex items-start">
+                    <div class="w-1/2 flex justify-end pr-6">
+                        <div class="w-[85%] flex flex-col gap-4">
+                            <Image
+                                src={actualMembers}
+                                alt="Integrantes actuales"
+                                class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                            <Image
+                                src={ancientMembers}
+                                alt="Antiguos integrantes"
+                                class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-1/2 pl-6">
+                        <div
+                            class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10"
+                        >
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-4"
+                            >
+                                ¿Qué es Twenty One Pilots?
+                            </h2>
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <IntroContent />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <Image src={tyler2001} alt="Tyler 2001" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-          <Image src={nickThomas} alt="Nick Thomas" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-        </div>
 
-        <div class="hidden md:flex items-start">
-          <div class="w-1/2 flex justify-end pr-6">
-            <div class="w-[85%] flex flex-col gap-4">
-              <Image src={tyler2001} alt="Tyler 2001" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-              <Image src={nickThomas} alt="Nick Thomas" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-            </div>
-          </div>
-          <div class="w-1/2 pl-6">
-            <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10">
-              <h2 class="text-2xl md:text-3xl font-bold text-[#d62420] mb-4">2001 - 2010</h2>
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <Content2001 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- ======================== -->
+            <!-- 2001 - 2010              -->
+            <!-- ======================== -->
+            <div class="relative mb-20 md:mb-32">
+                <div
+                    class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#d62420] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"
+                >
+                </div>
 
-      <!-- ======================== -->
-      <!-- 2011 - 2012              -->
-      <!-- ======================== -->
-      <div class="relative mb-20 md:mb-32">
-        <div class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#ffd800] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"></div>
+                <div class="md:hidden ml-12 space-y-4">
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10"
+                    >
+                        <h2 class="text-2xl font-bold text-[#d62420] mb-3">
+                            2001 - 2010
+                        </h2>
+                        <div
+                            class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm"
+                        >
+                            <Content2001 />
+                        </div>
+                    </div>
+                    <Image
+                        src={tyler2001}
+                        alt="Tyler 2001"
+                        class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                    <Image
+                        src={nickThomas}
+                        alt="Nick Thomas"
+                        class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                </div>
 
-        <div class="md:hidden ml-12 space-y-4">
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10">
-            <h2 class="text-2xl font-bold text-[#ffd800] mb-3">2011 - 2012</h2>
-            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm">
-              <Content2011 />
+                <div class="hidden md:flex items-start">
+                    <div class="w-1/2 flex justify-end pr-6">
+                        <div class="w-[85%] flex flex-col gap-4">
+                            <Image
+                                src={tyler2001}
+                                alt="Tyler 2001"
+                                class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                            <Image
+                                src={nickThomas}
+                                alt="Nick Thomas"
+                                class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-1/2 pl-6">
+                        <div
+                            class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10"
+                        >
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-[#d62420] mb-4"
+                            >
+                                2001 - 2010
+                            </h2>
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <Content2001 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <Image src={chrisSalihBand} alt="Chris Salih" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-          <Image src={tylerJoshYoung} alt="Tyler y Josh jóvenes" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-        </div>
 
-        <div class="hidden md:flex items-start">
-          <div class="w-1/2 flex justify-end pr-6">
-            <div class="w-[85%] flex flex-col gap-4">
-              <Image src={chrisSalihBand} alt="Chris Salih" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-              <Image src={tylerJoshYoung} alt="Tyler y Josh jóvenes" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-            </div>
-          </div>
-          <div class="w-1/2 pl-6">
-            <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10">
-              <h2 class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-4">2011 - 2012</h2>
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <Content2011 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- ======================== -->
+            <!-- 2011 - 2012              -->
+            <!-- ======================== -->
+            <div class="relative mb-20 md:mb-32">
+                <div
+                    class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#ffd800] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"
+                >
+                </div>
 
-      <!-- ======================== -->
-      <!-- 2012 - 2014              -->
-      <!-- ======================== -->
-      <div class="relative mb-20 md:mb-32">
-        <div class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#d62420] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"></div>
+                <div class="md:hidden ml-12 space-y-4">
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10"
+                    >
+                        <h2 class="text-2xl font-bold text-[#ffd800] mb-3">
+                            2011 - 2012
+                        </h2>
+                        <div
+                            class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm"
+                        >
+                            <Content2011 />
+                        </div>
+                    </div>
+                    <Image
+                        src={chrisSalihBand}
+                        alt="Chris Salih"
+                        class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                    <Image
+                        src={tylerJoshYoung}
+                        alt="Tyler y Josh jóvenes"
+                        class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                </div>
 
-        <div class="md:hidden ml-12 space-y-4">
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10">
-            <h2 class="text-2xl font-bold text-[#d62420] mb-3">2012 - 2014</h2>
-            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm">
-              <Content2012 />
+                <div class="hidden md:flex items-start">
+                    <div class="w-1/2 flex justify-end pr-6">
+                        <div class="w-[85%] flex flex-col gap-4">
+                            <Image
+                                src={chrisSalihBand}
+                                alt="Chris Salih"
+                                class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                            <Image
+                                src={tylerJoshYoung}
+                                alt="Tyler y Josh jóvenes"
+                                class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-1/2 pl-6">
+                        <div
+                            class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10"
+                        >
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-4"
+                            >
+                                2011 - 2012
+                            </h2>
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <Content2011 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <Image src={threesongs} alt="Three Songs EP" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-          <Image src={vesselCover} alt="Vessel Album" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-        </div>
 
-        <div class="hidden md:flex items-start">
-          <div class="w-1/2 flex justify-end pr-6">
-            <div class="w-[85%] flex flex-col gap-4">
-              <Image src={threesongs} alt="Three Songs EP" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-              <Image src={vesselCover} alt="Vessel Album" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-            </div>
-          </div>
-          <div class="w-1/2 pl-6">
-            <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10">
-              <h2 class="text-2xl md:text-3xl font-bold text-[#d62420] mb-4">2012 - 2014</h2>
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <Content2012 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- ======================== -->
+            <!-- 2012 - 2014              -->
+            <!-- ======================== -->
+            <div class="relative mb-20 md:mb-32">
+                <div
+                    class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#d62420] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"
+                >
+                </div>
 
-      <!-- ======================== -->
-      <!-- 2015 - 2017              -->
-      <!-- ======================== -->
-      <div class="relative mb-20 md:mb-32">
-        <div class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#ffd800] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"></div>
+                <div class="md:hidden ml-12 space-y-4">
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10"
+                    >
+                        <h2 class="text-2xl font-bold text-[#d62420] mb-3">
+                            2012 - 2014
+                        </h2>
+                        <div
+                            class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm"
+                        >
+                            <Content2012 />
+                        </div>
+                    </div>
+                    <Image
+                        src={threesongs}
+                        alt="Three Songs EP"
+                        class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                    <Image
+                        src={vesselCover}
+                        alt="Vessel Album"
+                        class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                </div>
 
-        <div class="md:hidden ml-12 space-y-4">
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10">
-            <h2 class="text-2xl font-bold text-[#ffd800] mb-3">2015 - 2017</h2>
-            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm">
-              <Content2015 />
+                <div class="hidden md:flex items-start">
+                    <div class="w-1/2 flex justify-end pr-6">
+                        <div class="w-[85%] flex flex-col gap-4">
+                            <Image
+                                src={threesongs}
+                                alt="Three Songs EP"
+                                class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                            <Image
+                                src={vesselCover}
+                                alt="Vessel Album"
+                                class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-1/2 pl-6">
+                        <div
+                            class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10"
+                        >
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-[#d62420] mb-4"
+                            >
+                                2012 - 2014
+                            </h2>
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <Content2012 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <Image src={blurryfaceCover} alt="Blurryface Album" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-          <Image src={heathens} alt="Heathens Single" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-        </div>
 
-        <div class="hidden md:flex items-start">
-          <div class="w-1/2 flex justify-end pr-6">
-            <div class="w-[85%] flex flex-col gap-4">
-              <Image src={blurryfaceCover} alt="Blurryface Album" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-              <Image src={heathens} alt="Heathens Single" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-            </div>
-          </div>
-          <div class="w-1/2 pl-6">
-            <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10">
-              <h2 class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-4">2015 - 2017</h2>
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <Content2015 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- ======================== -->
+            <!-- 2015 - 2017              -->
+            <!-- ======================== -->
+            <div class="relative mb-20 md:mb-32">
+                <div
+                    class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#ffd800] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"
+                >
+                </div>
 
-      <!-- ======================== -->
-      <!-- 2018 - 2019              -->
-      <!-- ======================== -->
-      <div class="relative mb-20 md:mb-32">
-        <div class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#d62420] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"></div>
+                <div class="md:hidden ml-12 space-y-4">
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10"
+                    >
+                        <h2 class="text-2xl font-bold text-[#ffd800] mb-3">
+                            2015 - 2017
+                        </h2>
+                        <div
+                            class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm"
+                        >
+                            <Content2015 />
+                        </div>
+                    </div>
+                    <Image
+                        src={blurryfaceCover}
+                        alt="Blurryface Album"
+                        class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                    <Image
+                        src={heathens}
+                        alt="Heathens Single"
+                        class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                </div>
 
-        <div class="md:hidden ml-12 space-y-4">
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10">
-            <h2 class="text-2xl font-bold text-[#d62420] mb-3">2018 - 2019</h2>
-            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm">
-              <Content2018 />
+                <div class="hidden md:flex items-start">
+                    <div class="w-1/2 flex justify-end pr-6">
+                        <div class="w-[85%] flex flex-col gap-4">
+                            <Image
+                                src={blurryfaceCover}
+                                alt="Blurryface Album"
+                                class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                            <Image
+                                src={heathens}
+                                alt="Heathens Single"
+                                class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-1/2 pl-6">
+                        <div
+                            class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10"
+                        >
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-4"
+                            >
+                                2015 - 2017
+                            </h2>
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <Content2015 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <Image src={trenchCover} alt="Trench Album" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-          <Image src={grammy} alt="Grammy Award" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-        </div>
 
-        <div class="hidden md:flex items-start">
-          <div class="w-1/2 flex justify-end pr-6">
-            <div class="w-[85%] flex flex-col gap-4">
-              <Image src={trenchCover} alt="Trench Album" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-              <Image src={grammy} alt="Grammy Award" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-            </div>
-          </div>
-          <div class="w-1/2 pl-6">
-            <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10">
-              <h2 class="text-2xl md:text-3xl font-bold text-[#d62420] mb-4">2018 - 2019</h2>
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <Content2018 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- ======================== -->
+            <!-- 2018 - 2019              -->
+            <!-- ======================== -->
+            <div class="relative mb-20 md:mb-32">
+                <div
+                    class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#d62420] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"
+                >
+                </div>
 
-      <!-- ======================== -->
-      <!-- 2020 - 2021              -->
-      <!-- ======================== -->
-      <div class="relative mb-20 md:mb-32">
-        <div class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#ffd800] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"></div>
+                <div class="md:hidden ml-12 space-y-4">
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10"
+                    >
+                        <h2 class="text-2xl font-bold text-[#d62420] mb-3">
+                            2018 - 2019
+                        </h2>
+                        <div
+                            class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm"
+                        >
+                            <Content2018 />
+                        </div>
+                    </div>
+                    <Image
+                        src={trenchCover}
+                        alt="Trench Album"
+                        class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                    <Image
+                        src={grammy}
+                        alt="Grammy Award"
+                        class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                </div>
 
-        <div class="md:hidden ml-12 space-y-4">
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10">
-            <h2 class="text-2xl font-bold text-[#ffd800] mb-3">2020 - 2021</h2>
-            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm">
-              <Content2020 />
+                <div class="hidden md:flex items-start">
+                    <div class="w-1/2 flex justify-end pr-6">
+                        <div class="w-[85%] flex flex-col gap-4">
+                            <Image
+                                src={trenchCover}
+                                alt="Trench Album"
+                                class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                            <Image
+                                src={grammy}
+                                alt="Grammy Award"
+                                class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-1/2 pl-6">
+                        <div
+                            class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10"
+                        >
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-[#d62420] mb-4"
+                            >
+                                2018 - 2019
+                            </h2>
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <Content2018 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <Image src={levelOfConcern} alt="Level of Concern" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-          <Image src={scaledCover} alt="Scaled and Icy Album" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-        </div>
 
-        <div class="hidden md:flex items-start">
-          <div class="w-1/2 flex justify-end pr-6">
-            <div class="w-[85%] flex flex-col gap-4">
-              <Image src={levelOfConcern} alt="Level of Concern" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-              <Image src={scaledCover} alt="Scaled and Icy Album" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-            </div>
-          </div>
-          <div class="w-1/2 pl-6">
-            <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10">
-              <h2 class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-4">2020 - 2021</h2>
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <Content2020 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- ======================== -->
+            <!-- 2020 - 2021              -->
+            <!-- ======================== -->
+            <div class="relative mb-20 md:mb-32">
+                <div
+                    class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#ffd800] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"
+                >
+                </div>
 
-      <!-- ======================== -->
-      <!-- 2024 - ACTUALIDAD        -->
-      <!-- ======================== -->
-      <div class="relative mb-20 md:mb-32">
-        <div class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#d62420] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"></div>
+                <div class="md:hidden ml-12 space-y-4">
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10"
+                    >
+                        <h2 class="text-2xl font-bold text-[#ffd800] mb-3">
+                            2020 - 2021
+                        </h2>
+                        <div
+                            class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm"
+                        >
+                            <Content2020 />
+                        </div>
+                    </div>
+                    <Image
+                        src={levelOfConcern}
+                        alt="Level of Concern"
+                        class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                    <Image
+                        src={scaledCover}
+                        alt="Scaled and Icy Album"
+                        class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                </div>
 
-        <div class="md:hidden ml-12 space-y-4">
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10">
-            <h2 class="text-2xl font-bold text-[#d62420] mb-3">2024 - Actualidad</h2>
-            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm">
-              <Content2024 />
+                <div class="hidden md:flex items-start">
+                    <div class="w-1/2 flex justify-end pr-6">
+                        <div class="w-[85%] flex flex-col gap-4">
+                            <Image
+                                src={levelOfConcern}
+                                alt="Level of Concern"
+                                class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                            <Image
+                                src={scaledCover}
+                                alt="Scaled and Icy Album"
+                                class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-1/2 pl-6">
+                        <div
+                            class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-lg shadow-[#ffd800]/10"
+                        >
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-4"
+                            >
+                                2020 - 2021
+                            </h2>
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <Content2020 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <Image src={clancyCover} alt="Clancy Album" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-          <Image src={clancyPosters} alt="Clancy Posters" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-        </div>
 
-        <div class="hidden md:flex items-start">
-          <div class="w-1/2 flex justify-end pr-6">
-            <div class="w-[85%] flex flex-col gap-4">
-              <Image src={clancyCover} alt="Clancy Album" class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover" loading="lazy" />
-              <Image src={clancyPosters} alt="Clancy Posters" class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover" loading="lazy" />
-            </div>
-          </div>
-          <div class="w-1/2 pl-6">
-            <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10">
-              <h2 class="text-2xl md:text-3xl font-bold text-[#d62420] mb-4">2024 - Actualidad</h2>
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <Content2024 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <!-- ======================== -->
+            <!-- 2024 - ACTUALIDAD        -->
+            <!-- ======================== -->
+            <div class="relative mb-20 md:mb-32">
+                <div
+                    class="timeline-dot absolute left-4 md:left-1/2 w-6 h-6 bg-[#d62420] rounded-full transform -translate-x-1/2 border-4 border-[#231f20] z-10"
+                >
+                </div>
 
-    <!-- Members Section -->
-    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-[#231f20] via-[#2a2625] to-[#231f20]">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center uppercase mb-16 text-[#ffd800] tracking-wide">
-          Semblanza de los integrantes actuales
-        </h2>
-        
-        <div class="grid md:grid-cols-2 gap-12">
-          <!-- Tyler Joseph -->
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-xl shadow-[#ffd800]/10 hover:border-[#ffd800]/50 transition-all duration-300">
-            <h3 class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-6 relative pb-4">
-              Tyler Joseph
-              <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#ffd800] to-[#d62420]"></span>
-            </h3>
-            <div class="flex flex-col sm:flex-row gap-6 mb-6">
-              <Image
-                src={tylerSemblanza}
-                alt="Tyler Joseph"
-                class="w-full sm:w-40 h-40 object-cover rounded-xl shadow-lg"
-                loading="lazy"
-              />
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <TylerContent />
-              </div>
-            </div>
-          </div>
-          
-          <!-- Josh Dun -->
-          <div class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-xl shadow-[#d62420]/10 hover:border-[#d62420]/50 transition-all duration-300">
-            <h3 class="text-2xl md:text-3xl font-bold text-[#d62420] mb-6 relative pb-4">
-              Josh Dun
-              <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#d62420] to-[#ffd800]"></span>
-            </h3>
-            <div class="flex flex-col sm:flex-row gap-6 mb-6">
-              <Image
-                src={joshSemblanza}
-                alt="Josh Dun"
-                class="w-full sm:w-40 h-40 object-cover rounded-xl shadow-lg"
-                loading="lazy"
-              />
-              <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base">
-                <JoshContent />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                <div class="md:hidden ml-12 space-y-4">
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-5 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10"
+                    >
+                        <h2 class="text-2xl font-bold text-[#d62420] mb-3">
+                            2024 - Actualidad
+                        </h2>
+                        <div
+                            class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm"
+                        >
+                            <Content2024 />
+                        </div>
+                    </div>
+                    <Image
+                        src={clancyCover}
+                        alt="Clancy Album"
+                        class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                    <Image
+                        src={clancyPosters}
+                        alt="Clancy Posters"
+                        class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                        loading="lazy"
+                    />
+                </div>
 
-    <!-- Footer Note -->
-    <section class="py-8 text-center text-gray-500 text-sm">
-      <p>[En "Eras Y Álbumes" tienes una mejor explicación sobre la narrativa de los álbumes]</p>
-    </section>
-  </main>
+                <div class="hidden md:flex items-start">
+                    <div class="w-1/2 flex justify-end pr-6">
+                        <div class="w-[85%] flex flex-col gap-4">
+                            <Image
+                                src={clancyCover}
+                                alt="Clancy Album"
+                                class="rounded-xl shadow-lg shadow-[#ffd800]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                            <Image
+                                src={clancyPosters}
+                                alt="Clancy Posters"
+                                class="rounded-xl shadow-lg shadow-[#d62420]/20 w-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-1/2 pl-6">
+                        <div
+                            class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-lg shadow-[#d62420]/10"
+                        >
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-[#d62420] mb-4"
+                            >
+                                2024 - Actualidad
+                            </h2>
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <Content2024 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Members Section -->
+        <section
+            class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-[#231f20] via-[#2a2625] to-[#231f20]"
+        >
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-3xl md:text-4xl lg:text-5xl font-bold text-center uppercase mb-16 text-[#ffd800] tracking-wide"
+                >
+                    Semblanza de los integrantes actuales
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Tyler Joseph -->
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#ffd800]/30 shadow-xl shadow-[#ffd800]/10 hover:border-[#ffd800]/50 transition-all duration-300"
+                    >
+                        <h3
+                            class="text-2xl md:text-3xl font-bold text-[#ffd800] mb-6 relative pb-4"
+                        >
+                            Tyler Joseph
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#ffd800] to-[#d62420]"
+                            ></span>
+                        </h3>
+                        <div class="flex flex-col sm:flex-row gap-6 mb-6">
+                            <Image
+                                src={tylerSemblanza}
+                                alt="Tyler Joseph"
+                                class="w-full sm:w-40 h-40 object-cover rounded-xl shadow-lg"
+                                loading="lazy"
+                            />
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <TylerContent />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Josh Dun -->
+                    <div
+                        class="bg-[#2a2625]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#d62420]/30 shadow-xl shadow-[#d62420]/10 hover:border-[#d62420]/50 transition-all duration-300"
+                    >
+                        <h3
+                            class="text-2xl md:text-3xl font-bold text-[#d62420] mb-6 relative pb-4"
+                        >
+                            Josh Dun
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#d62420] to-[#ffd800]"
+                            ></span>
+                        </h3>
+                        <div class="flex flex-col sm:flex-row gap-6 mb-6">
+                            <Image
+                                src={joshSemblanza}
+                                alt="Josh Dun"
+                                class="w-full sm:w-40 h-40 object-cover rounded-xl shadow-lg"
+                                loading="lazy"
+                            />
+                            <div
+                                class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-sm md:text-base"
+                            >
+                                <JoshContent />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Note -->
+        <section class="py-8 text-center text-gray-500 text-sm">
+            <p>
+                [En "Eras Y Álbumes" tienes una mejor explicación sobre la
+                narrativa de los álbumes]
+            </p>
+        </section>
+    </main>
+    <Footer />
 </Layout>
 
 <style>
-  /* Timeline dot animation */
-  .timeline-dot {
-    animation: pulse 2s infinite;
-  }
-  
-  @keyframes pulse {
-    0%, 100% {
-      box-shadow: 0 0 0 0 rgba(255, 216, 0, 0.4);
+    /* Timeline dot animation */
+    .timeline-dot {
+        animation: pulse 2s infinite;
     }
-    50% {
-      box-shadow: 0 0 0 10px rgba(255, 216, 0, 0);
+
+    @keyframes pulse {
+        0%,
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 216, 0, 0.4);
+        }
+        50% {
+            box-shadow: 0 0 0 10px rgba(255, 216, 0, 0);
+        }
     }
-  }
-  
-  /* Prose styling overrides */
-  :global(.prose p) {
-    margin-bottom: 1rem;
-    text-indent: 2rem;
-  }
-  
-  :global(.prose p:first-child) {
-    text-indent: 0;
-  }
-  
-  :global(.prose strong) {
-    color: #ffd800;
-  }
-  
-  :global(.prose em) {
-    color: #d62420;
-  }
+
+    /* Prose styling overrides */
+    :global(.prose p) {
+        margin-bottom: 1rem;
+        text-indent: 2rem;
+    }
+
+    :global(.prose p:first-child) {
+        text-indent: 0;
+    }
+
+    :global(.prose strong) {
+        color: #ffd800;
+    }
+
+    :global(.prose em) {
+        color: #d62420;
+    }
 </style>
